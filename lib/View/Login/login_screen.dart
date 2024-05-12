@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:smart_save/Controllers/auth/auth_block.dart';
 import 'package:smart_save/View/Login/Dashbord/dashboard_event.dart';
+import 'package:smart_save/View/Login/signup_screen.dart';
 import 'package:smart_save/comman_widget/smart_save_button.dart';
 
 class LoginPage extends StatelessWidget {
@@ -151,22 +152,24 @@ class LoginPage extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               InkWell(
-                onTap: () {},
+                onTap: () {
+                
+                },
                 child: RichText(
-                    text: TextSpan(
+                    text: const TextSpan(
                         text: 'Don\'t have an account? ',
-                        style: const TextStyle(
+                        style: TextStyle(
                           color: Colors.grey,
                           fontSize: 16,
                         ),
                         children: [
                       TextSpan(
                         text: 'Sign Up',
-                        style: const TextStyle(
+                        style: TextStyle(
                           color: Color.fromARGB(255, 7, 89, 156),
                           fontWeight: FontWeight.bold,
                         ),
